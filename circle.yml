@@ -12,5 +12,5 @@ machine:
 
 dependencies:
     pre:
-          - sudo pip install docker-compose==1.8.0
+      - sudo pip install docker-compose==1.8.0
 
