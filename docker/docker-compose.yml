@@ -1,0 +1,8 @@
+version: '2'
+services:
+  compiler:
+    build: .
+    image: compiler:latest
+    volumes:
+      - ../package:/var/task
+    command: [npm, install, --production]
