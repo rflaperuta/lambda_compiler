@@ -16,3 +16,6 @@ dependencies:
   pre:
     - sudo pip install docker-compose==1.8.0
 
+test:
+  override:
+    - ./docker/run-tests
