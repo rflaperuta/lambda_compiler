@@ -1,3 +1,5 @@
+general:
+  build_dir: ./docker
 machine:
   pre:
     - echo 'DOCKER_OPTS="-s btrfs -e lxc -D --userland-proxy=false"' | sudo tee -a /etc/default/docker
