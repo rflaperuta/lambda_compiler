@@ -18,4 +18,4 @@ dependencies:
 
 test:
   override:
-    - ./docker/run-tests
+    - run-tests
