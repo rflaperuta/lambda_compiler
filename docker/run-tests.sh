@@ -1,8 +1,8 @@
-all: build-compiler compile test tear-down
-build-compiler:
+#!/usr/bin/env bash
+	echo 'COMPOSE BUILD'
 	sudo docker-compose build --force-rm --no-cache --pull compiler
-compile:
+	echo 'COMPOSE RUN'
 	sudo docker-compose run -e DEBUG='*' compiler node index.js
-tear-down:
+	echo 'TEAR DOWN'
 	sudo docker-compose down compiler
   sudo docker-compose stop

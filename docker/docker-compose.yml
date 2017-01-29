@@ -5,4 +5,7 @@ services:
     image: compiler:latest
     volumes:
       - ../package:/var/task
+    environment:
+      DEBUG=*
+      SLS_DEBUG=*
     command: [npm, install, --production]
