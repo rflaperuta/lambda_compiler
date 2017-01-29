@@ -18,4 +18,4 @@ dependencies:
 
 test:
   override:
-    - run-tests.sh
+    - echo $PWD
