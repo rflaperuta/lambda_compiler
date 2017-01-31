@@ -13,6 +13,8 @@ machine:
     - docker
 
 dependencies:
+  cache_directories:
+    - ../package/node_modules/sodium
   pre:
     - sudo pip install docker-compose==1.8.0
 
