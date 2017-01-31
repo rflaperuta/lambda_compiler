@@ -8,7 +8,7 @@
 	sudo docker-compose run -e DEBUG='*' compiler npm run test
 	test_result=$?
 
-	if [[ -e test-results.xml ]]; then cp test-results.xml ${CIRCLE_TEST_REPORTS}/test-results.xml; fi
+	if [[ -e test-results.xml ]]; then mkdir -p ${CIRCLE_TEST_REPORTS}/junit && cp test-results.xml ${CIRCLE_TEST_REPORTS}/junit/test-results.xml; fi
 
 	echo 'TEAR DOWN'
 	sudo docker-compose down 
