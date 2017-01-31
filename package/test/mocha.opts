@@ -1,0 +1,6 @@
+--require test/setup.js
+--ui bdd
+--reporter mocha-multi-reporters
+--reporter-options configFile=test/reportersConfig.json
+--slow 10000
+--timeout 10000
