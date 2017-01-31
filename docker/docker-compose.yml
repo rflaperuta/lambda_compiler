@@ -8,4 +8,4 @@ services:
     environment:
       - DEBUG=*
       - SLS_DEBUG=*
-    command: bash -c "npm install --production && npm install mocha chai mocha-junit-report mocha-multi-reporters -D"
+    command: bash -c "npm install --production && npm install mocha chai mocha-junit-reporter mocha-multi-reporters -D"
